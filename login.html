@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <title>Đăng nhập</title>
+    <style>
+      @font-face {
+        font-family: "SPD_ITALIC";
+        src: url("./resources/fonts/SFPRODISPLAYBLACKITALIC.OTF");
+      }
+      @font-face {
+        font-family: "SPD_BOLD";
+        src: url("./resources/fonts/SFPRODISPLAYBOLD.OTF");
+      }
+      @font-face {
+        font-family: "SPD_HEAVYITALIC";
+        src: url("./resources/fonts/SFPRODISPLAYHEAVYITALIC.OTF");
+      }
+      @font-face {
+        
+        font-family: "SPD_LIGHTITALIC";
+        src: url("./resources/fonts/SFPRODISPLAYLIGHTITALIC.OTF");
+      }
+
+      @font-face {
+        font-family: "SPD_MEDIUM";
+        src: url("./resources/fonts/SFPRODISPLAYMEDIUM.OTF");
+      }
+
+      @font-face {
+        font-family: "SPD_REGULAR";
+        src: url("./resources/fonts/SFPRODISPLAYREGULAR.OTF");
+      }
+
+      @font-face {
+        font-family: "SPD_SEMIBOLDITALIC";
+        src: url("./resources/fonts/SFPRODISPLAYSEMIBOLDITALIC.OTF");
+      }
+
+      @font-face {
+        font-family: "SPD_THINITALIC";
+        src: url("./resources/fonts/SFPRODISPLAYTHINITALIC.OTF");
+      }
+
+      @font-face {
+        font-family: "SPD_ULTRALIGHTITALIC";
+        src: url("./resources/fonts/SFPRODISPLAYULTRALIGHTITALIC.OTF");
+      }
+      .swiper {
+        width: 1000px;
+        height: 500px;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              SPD_ITALIC: ["SPD_ITALIC"],
+              SPD_BOLD: ["SPD_BOLD"],
+              SPD_HEAVYITALIC: ["SPD_HEAVYITALIC"],
+              SPD_LIGHTITALIC: ["SPD_LIGHTITALIC"],
+              SPD_MEDIUM: ["SPD_MEDIUM"],
+              SPD_REGULAR: ["SPD_REGULAR"],
+              SPD_SEMIBOLDITALIC: ["SPD_SEMIBOLDITALIC"],
+              SPD_THINITALIC: ["SPD_THINITALIC"],
+              SPD_ULTRALIGHTITALIC: ["SPD_ULTRALIGHTITALIC"],
+            },
+            colors: {
+              primary1: "#201F1F",
+              primary2: "#2C46AA",
+              primary3: "#8F8F8F",
+              primary4: "#F2F2F2",
+              primary5: "#FFFFFF",
+              neutral: "#FFFFFF",
+              neutral900: "#141414",
+              neutral800: "#383838",
+              neutral700: "#595959",
+              neutral500: "#8C8C8C",
+              neutral400: "#BFBFBF",
+              neutral300: "#D9D9D9",
+              neutral200: "#F5F5F5",
+              neutral100: "#FAFAFA",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  
+  <body>
+    <!-- header  -->
+    <div class="header mt-10">
+      <div class="container mx-auto flex items-center justify-between">
+        <div>
+          <h1 class="text-5xl font-SPD_BOLD"> <a href="home.html" class="hover:text-primary2">Apple8</a></h1>
+        </div>
+        <div>
+          <ul class="font-SPD_REGULAR text-2xl flex justify-between items-center gap-x-12">
+            <li><a href="#" class="hover:text-primary2">IPhone</a></li>
+            <li><a href="#" class="hover:text-primary2">IPad</a></li>
+            <li><a href="#" class="hover:text-primary2">MacBook</a></li>
+            <li><a href="#" class="hover:text-primary2">iMac</a></li>
+            <li><a href="#" class="hover:text-primary2">AirPods</a></li>
+          </ul>
+        </div>
+        <div>
+          <a href="#">
+            <img src="./resources/images/Frame 43376.png" alt="icon" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Container -->
+    <div class="container mx-auto font-SPD_REGULAR">
+        <div class="my-16">
+          Tài khoản > <span class="text-primary2">Đăng nhập</span>
+        </div>       
+        <div class="mx-auto max-w-md">
+            <span class="flex justify-center text-[24px] font-SPD_BOLD">Đăng nhập</span>
+            <div class="mt-4 bg-neutral rounded-lg">
+                <div class="px-8 py-6">
+                    <input type="text" placeholder="Email hoặc số điện thoại" class="border w-full h-5 px-3 py-5 hover:outline-none focus:outline-none focus:ring-1 focus:ring-primary2-400 rounded-md">
+                    <input type="text" placeholder="Nhập mật khẩu của bạn" class="border w-full h-5 px-3 py-5 mt-4 hover:outline-none focus:outline-none focus:ring-1 focus:ring-primary2-400 rounded-md">
+                    <div class="flex justify-between items-baseline">
+                        <div></div>
+                        <a href="#" class="text-sm-center mt-6 hover:none-underline">Quên mật khẩu ?</a>
+                    </div>
+                    <div class="flex justify-center items-baseline">
+                        <button
+                            type="button"
+                            class="text-white text-[16px] bg-primary2 hover:bg-primary2 focus:ring-1 focus:ring-blue-300 font-medium rounded-lg text-sm px-36 ml-1 mr-1 py-4 mb-2 mt-6"
+                        >
+                        Đăng nhập
+                        </button>
+                    </div>
+                    <div class="inline-flex justify-center items-center w-full">
+                        <hr class="my-6 w-80 h-px bg-gray-200 border-0 dark:bg-gray-700">
+                        <span class="absolute left-1/2 px-3 font-SPD_REGULAR text-gray-900 bg-white -translate-x-1/2 neutral300:text-white neutral300:bg-gray-900">Or</span>
+                    </div>
+                    <div class="inline-flex justify-center items-center w-full">
+                        <a href="#" class="text-sm-center mt-4 hover:underline">
+                            <img src="./resources/images/GG.png" alt="">
+                        </a>
+                        <a href="#" class="text-sm-center mt-4 ml-4 hover:underline">
+                            <img src="./resources/images/AP.png" alt="">
+                        </a>
+                        <a href="#" class="text-sm-center mt-4 ml-4 hover:underline">
+                            <img src="./resources/images/FB.png" alt="">
+                        </a>
+                    </div>
+                    <div class="inline-flex justify-center items-center w-full">
+                        <div class="my-8">
+                            Bạn chưa có tài khoản ? 
+                            <a href="#"><span class="text-primary2 font-SPD_BOLD"> Đăng ký</span></a>
+                          </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

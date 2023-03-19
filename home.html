@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="swiper-bundle.min.css"/>
+    <title>Trang chủ</title>
+    <style>
+      @font-face {
+        font-family: "SPD_ITALIC";
+        src: url("./resources/fonts/SFPRODISPLAYBLACKITALIC.OTF");
+      }
+      @font-face {
+        font-family: "SPD_BOLD";
+        src: url("./resources/fonts/SFPRODISPLAYBOLD.OTF");
+      }
+      @font-face {
+        font-family: "SPD_HEAVYITALIC";
+        src: url("./resources/fonts/SFPRODISPLAYHEAVYITALIC.OTF");
+      }
+      @font-face {
+        font-family: "SPD_LIGHTITALIC";
+        src: url("./resources/fonts/SFPRODISPLAYLIGHTITALIC.OTF");
+      }
+
+      @font-face {
+        font-family: "SPD_MEDIUM";
+        src: url("./resources/fonts/SFPRODISPLAYMEDIUM.OTF");
+      }
+
+      @font-face {
+        font-family: "SPD_REGULAR";
+        src: url("./resources/fonts/SFPRODISPLAYREGULAR.OTF");
+      }
+
+      @font-face {
+        font-family: "SPD_SEMIBOLDITALIC";
+        src: url("./resources/fonts/SFPRODISPLAYSEMIBOLDITALIC.OTF");
+      }
+
+      @font-face {
+        font-family: "SPD_THINITALIC";
+        src: url("./resources/fonts/SFPRODISPLAYTHINITALIC.OTF");
+      }
+
+      @font-face {
+        font-family: "SPD_ULTRALIGHTITALIC";
+        src: url("./resources/fonts/SFPRODISPLAYULTRALIGHTITALIC.OTF");
+      }
+      .swiper {
+        width: 1000px;
+        height: 500px;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              SPD_ITALIC: ["SPD_ITALIC"],
+              SPD_BOLD: ["SPD_BOLD"],
+              SPD_HEAVYITALIC: ["SPD_HEAVYITALIC"],
+              SPD_LIGHTITALIC: ["SPD_LIGHTITALIC"],
+              SPD_MEDIUM: ["SPD_MEDIUM"],
+              SPD_REGULAR: ["SPD_REGULAR"],
+              SPD_SEMIBOLDITALIC: ["SPD_SEMIBOLDITALIC"],
+              SPD_THINITALIC: ["SPD_THINITALIC"],
+              SPD_ULTRALIGHTITALIC: ["SPD_ULTRALIGHTITALIC"],
+            },
+            colors: {
+              primary1: "#201F1F",
+              primary2: "#2C46AA",
+              primary3: "#8F8F8F",
+              primary4: "#F2F2F2",
+              primary5: "#FFFFFF",
+              neutral: "#FFFFFF",
+              neutral900: "#141414",
+              neutral800: "#383838",
+              neutral700: "#595959",
+              neutral500: "#8C8C8C",
+              neutral400: "#BFBFBF",
+              neutral300: "#D9D9D9",
+              neutral200: "#F5F5F5",
+              neutral100: "#FAFAFA",
+            },
+          },
+        },
+      };
+    </script>
+    <script type="module">
+      import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js";
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        // direction: "vertical",
+        loop: true,
+        slidesPerView: 3, // or 'auto'
+        slidesPerColumn: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 5,
+        grabCursor: true,
+        autoplay: {
+          delay: 3000,
+        },
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
+  </head>
+  <body>
+    <div class="header mt-10">
+      <div class="container mx-auto flex items-center justify-between">
+        <div>
+          <h1 class="text-5xl font-SPD_BOLD"> <a href="Trangchu" class="hover:text-primary2">Apple8</a></h1>
+        </div>
+        <div>
+          <ul class="font-SPD_REGULAR text-2xl flex justify-between items-center gap-x-12">
+            <li><a href="#" class="hover:text-primary2">IPhone</a></li>
+            <li><a href="#" class="hover:text-primary2">IPad</a></li>
+            <li><a href="#" class="hover:text-primary2">MacBook</a></li>
+            <li><a href="#" class="hover:text-primary2">iMac</a></li>
+            <li><a href="#" class="hover:text-primary2">AirPods</a></li>
+          </ul>
+        </div>
+        <div>
+          <a href="#">
+            <img src="./resources/images/Frame 43376.png" alt="icon" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto mt-20">
+      <div class="text-center">
+        <div class="font-SPD_REGULAR text-2xl text-neutral700">New</div>
+        <h1 class="text-5xl font-SPD_BOLD">IPhone 14</h1>
+        <div class="mt-6">
+          Giá chỉ từ:
+          <span class="text-primary2 text-[16px] font-SPD_MEDIUM">21.990.000 đ</span>
+        </div>
+      </div>
+      <div class="flex gap-x-2 justify-center mt-8 items-center">
+        <div>
+          <button
+            type="button"
+            class="text-primary1 hover:text-white hover:bg-primary2 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+          >
+            Tìm hiểu thêm >
+          </button>
+          <button
+            type="button"
+            class="text-white bg-primary2 hover:bg-primary2 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2"
+          >
+            Mua ngay
+          </button>
+        </div>
+      </div>
+      <div class="mt-[72px] flex justify-center">
+        <img src="./resources/images/iPhone-14-PNG-Photo 1.png" alt="img" />
+      </div>
+      <div class="mt-[120px]">
+        <div class="text-center text-primary2 text-[32px] font-SPD_MEDIUM">
+          Khuyến mãi mới
+        </div>
+        <div>
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div
+                  class="flex border rounded-lg py-4 px-6 flex-col justify-between items-center mr-4"
+                >
+                  <div>
+                    <img
+                      src="./resources/images/[CITYPNG 1 (2).png"
+                      alt="asd"
+                    />
+                  </div>
+                  <div class="mt-[30px] mb-[22px] text-sm font-SPD_REGULAR">
+                    Apple iPhone 14 Pro Max 512GB Deep Purple
+                  </div>
+                  <div
+                    class="flex items-center w-full justify-between mb-[27px]"
+                  >
+                    <div class="text-primary2 font-SPD_MEDIUM">
+                      29.000.000 đ<span class="text-neutral400 line-through"
+                        >31.000.000đ</span
+                      >
+                    </div>
+                    <div>
+                      <img
+                        src="./resources/images/Outline/Shopping, Ecommerce/Cart Plus.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="flex border rounded-lg py-4 px-6 flex-col justify-between items-center mr-4"
+                >
+                  <div>
+                    <img
+                      src="./resources/images/[CITYPNG 1 (2).png"
+                      alt="asd"
+                    />
+                  </div>
+                  <div class="mt-[30px] mb-[22px] text-sm font-SPD_REGULAR">
+                    Airpods Pro 2
+                  </div>
+                  <div
+                    class="flex items-center w-full justify-between mb-[27px]"
+                  >
+                    <div class="text-primary2 font-SPD_MEDIUM">
+                      5.000.000 đ<span class="text-neutral400 line-through"
+                        >5.500.000đ</span
+                      >
+                    </div>
+                    <div>
+                      <img
+                        src="./resources/images/Outline/Shopping, Ecommerce/Cart Plus.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="flex border rounded-lg py-4 px-6 flex-col justify-between items-center mr-4"
+                >
+                  <div>
+                    <img
+                      src="./resources/images/[CITYPNG 1 (2).png"
+                      alt="asd"
+                    />
+                  </div>
+                  <div class="mt-[30px] mb-[22px] text-sm font-SPD_REGULAR">
+                    Apple iPhone 12 512GB
+                  </div>
+                  <div
+                    class="flex items-center w-full justify-between mb-[27px]"
+                  >
+                    <div class="text-primary2 font-SPD_MEDIUM">
+                      21.000.000 đ<span class="text-neutral400 line-through"
+                        >25.000.000đ</span
+                      >
+                    </div>
+                    <div>
+                      <img
+                        src="./resources/images/Outline/Shopping, Ecommerce/Cart Plus.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="flex border rounded-lg py-4 px-6 flex-col justify-between items-center mr-4"
+                >
+                  <div>
+                    <img
+                      src="./resources/images/[CITYPNG 1 (1).png"
+                      alt="asd"
+                    />
+                  </div>
+                  <div class="mt-[30px] mb-[22px] text-sm font-SPD_REGULAR">
+                    Apple iPhone 14 Pro Max 512GB Deep Purple
+                  </div>
+                  <div
+                    class="flex items-center w-full justify-between mb-[27px]"
+                  >
+                    <div class="text-primary2 font-SPD_MEDIUM">
+                      29.000.000 đ<span class="text-neutral400 line-through"
+                        >31.000.000đ</span
+                      >
+                    </div>
+                    <div>
+                      <img
+                        src="./resources/images/Outline/Shopping, Ecommerce/Cart Plus.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-[120px] mx-36">
+        <div class="text-center text-primary2 text-[32px] font-SPD_MEDIUM">
+          Sản phẩm hiện có
+        </div>
+        <div class="flex flex-wrap mt-10 justify-center">
+          <div
+            class="h-[290px] w-auto flex flex-col bg-primary4 justify-center items-center rounded-lg w-[308px] mr-4 mb-6"
+          >
+            <div class="font-SPD_MEDIUM mb-2">Iphone</div>
+            <div class="font-SPD_REGULAR mb-10">
+              Giá chỉ từ <span class="text-primary2">11.000.000 đ</span>
+            </div>
+            <div>
+              <img
+                src="./resources/images/61d2f96992b57c0004c64748 1.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            class="h-[290px] w-auto flex flex-col bg-primary4 justify-center items-center rounded-lg w-[308px] mr-4 mb-6"
+          >
+            <div class="font-SPD_MEDIUM mb-2">Macbook</div>
+            <div class="font-SPD_REGULAR mb-10">
+              Giá chỉ từ <span class="text-primary2">21.000.000 đ</span>
+            </div>
+            <div>
+              <img
+                src="./resources/images/61d2f96992b57c0004c64748 1.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            class="h-[290px] w-auto flex flex-col bg-primary4 justify-center items-center rounded-lg w-[308px] mr-4 mb-6"
+          >
+            <div class="font-SPD_MEDIUM mb-2">Airpods</div>
+            <div class="font-SPD_REGULAR mb-10">
+              Giá chỉ từ <span class="text-primary2">2.000.000 đ</span>
+            </div>
+            <div>
+              <img
+                src="./resources/images/61d2f96992b57c0004c64748 1.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            class="h-[290px] w-auto flex flex-col bg-primary4 justify-center items-center rounded-lg w-[308px] mr-4 mb-6"
+          >
+            <div class="font-SPD_MEDIUM mb-2">iMacs</div>
+            <div class="font-SPD_REGULAR mb-10">
+              Giá chỉ từ <span class="text-primary2">21.000.000 đ</span>
+            </div>
+            <div>
+              <img
+                src="./resources/images/61d2f96992b57c0004c64748 1.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            class="h-[290px] w-auto flex flex-col bg-primary4 justify-center items-center rounded-lg w-[308px] mr-4 mb-6"
+          >
+            <div class="font-SPD_MEDIUM mb-2">MacBook</div>
+            <div class="font-SPD_REGULAR mb-10">
+              Giá chỉ từ <span class="text-primary2">21.000.000 đ</span>
+            </div>
+            <div>
+              <img
+                src="./resources/images/61d2f96992b57c0004c64748 1.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div>
+      <img src="./resources/images/Frame 19.png" alt="banner" class="mt-[120px] mx-auto flex items-center justify-between">
+    </div>
+    <!-- Footer -->
+    <div class="container mx-auto mt-[200px]">
+      <div class="flex">
+
+        <div class="basis-1/4 mr-28">
+          <div class="flex flex-col justify-between items-center">
+            <div class="font-SPD_BOLD text-[32px]">Apple 8</div>
+            <div class="text-sm text-justify px-6 text-primary3 mt-4 mb-6">
+              Apple8 cam kết nỗ lực hết mình nhằm cung cấp sản phẩm và dịch vụ
+              đúng với những giá trị mà khách hàng mong đợi.
+            </div>
+            <div>
+              <img src="./resources/images/Frame 43424.png" alt="icon" />
+            </div>
+          </div>
+        </div>
+
+        <div class="basis-3/4">
+          <div class="flex gap-x-14">
+
+            <div class="flex-col">
+              <ul
+                class="flex flex-col font-SPD_REGULAR text-sm text-neutral700 gap-y-4"
+              >
+                <li class="font-SPD_MEDIUM text-black text-base">Sản phẩm</li>
+                <li><a href="#" class="hover:text-primary2 hover:font-SPD_BOLD">IPhone</a></li>
+                <li><a href="#" class="hover:text-primary2 hover:font-SPD_BOLD">IPad</a></li>
+                <li><a href="#" class="hover:text-primary2 hover:font-SPD_BOLD">AirPods</a></li>
+                <li><a href="#" class="hover:text-primary2 hover:font-SPD_BOLD">MacBook</a></li>
+                <li><a href="#" class="hover:text-primary2 hover:font-SPD_BOLD">Mac</a></li> 
+              </ul>
+            </div>
+
+            <div class="flex-col"> 
+              <ul
+                class="flex flex-col font-SPD_REGULAR text-sm text-neutral700 gap-y-4"
+              >
+                <li>
+                  <p class="font-SPD_MEDIUM text-black text-base mb-2">
+                    Địa chỉ
+                  </p>
+                  <p>13 Bà Triệu, Hoàn Kiếm, Hà Nội</p>
+                </li>
+
+                <li>
+                  <p class="font-SPD_MEDIUM text-black text-base mb-2">
+                    Điện thoại
+                  </p>
+                  <p class="mb-2">(024) 22 63 8888</p>
+                  <p>(024) 22 11 7118</p>
+                </li>
+                <li>
+                  <p class="font-SPD_MEDIUM text-black text-base mb-2">Email</p>
+                  <p>apple8hn@gmail.com</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="flex-col">
+              <ul
+                class="flex flex-col font-SPD_REGULAR text-sm text-neutral700 gap-y-4"
+              >
+                <li class="flex flex-col gap-y-2">
+                  <p class="font-SPD_MEDIUM text-black text-base">Chính sách</p>
+                  <a href="#" class="hover:text-primary2 hover:font-SPD_LIGHTITALIC">> Điều khoản sử dụng</a>
+                  <a href="#" class="hover:text-primary2 hover:font-SPD_LIGHTITALIC">> Chính sách bảo mật</a>
+                  <a href="#" class="hover:text-primary2 hover:font-SPD_LIGHTITALIC">> Chính sách bảo hành</a>
+                  <a href="#" class="hover:text-primary2 hover:font-SPD_LIGHTITALIC">> Chính sách đổi trả</a>
+                  <a href="#" class="hover:text-primary2 hover:font-SPD_LIGHTITALIC">> Phương thức thanh toán</a>
+                  <a href="#" class="hover:text-primary2 hover:font-SPD_LIGHTITALIC">> Chính sách vận chuyển</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="flex-col">
+              <ul
+                class="flex flex-col font-SPD_REGULAR text-sm text-neutral700 gap-y-4"
+              >
+                <li class="flex flex-col gap-y-2">
+                  <p class="font-SPD_MEDIUM text-black text-base">
+                    Giờ làm việc
+                  </p>
+                  <p>Thứ 2 đến thứ 6 : <span class="font-SPD_LIGHTITALIC">08:00am - 20:00pm</span></p>
+                  <p>Thứ bảy và chủ nhật : <span class="font-SPD_LIGHTITALIC">10:00am - 18:00pm</span></p>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <hr class="bg-black h-[2px] mx-4 my-[32px]" />
+      
+      <div class="text-center text-sm font-SPD_REGULAR text-neutral700 mb-14">
+        Copyrights © 2019 by APPLE8
+      </div>
+    </div>  
+  </body>
+</html>
